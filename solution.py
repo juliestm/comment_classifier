@@ -14,7 +14,7 @@ clf = None
 @app.route('/')
 def load_model():
     global clf
-    clf = pickle.load(open('pipline.pkl', 'rb'))
+    clf = pickle.load(open('classifier.pkl', 'rb'))
     return jsonify(status='model is loaded')
 
 
